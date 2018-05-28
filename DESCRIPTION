@@ -1,0 +1,30 @@
+Package: freebase
+Type: Package
+Title: A 'usethis'-like Package for Base Pseudo-equivalents of 'tidyverse' Code
+Version: 0.1.0
+Date: 2018-05-28
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5670-2640"))
+  )
+Maintainer: Bob Rudis <bob@rud.is>
+Description: The 'tidyverse' is awesome, but can take a bit compile on systems
+    where there are no pre-built binary packages. Methods are provided which use
+    the facilities of the 'usethis' package to snap-in base versions of useful
+    'tidyverse' functions that are mostly equivalent (some are more complete
+    than others). The base R counterpart functions will likely be slower than
+    the 'tidyverse' equivalents but using them will decrease 'Imports' 
+    dependencies. Use delibrately and with caution.
+URL: https://github.com/hrbrmstr/freebase
+BugReports: https://github.com/hrbrmstr/freebase/issues
+Encoding: UTF-8
+License: MIT + file LICENSE
+Suggests:
+    testthat,
+    covr
+Depends:
+    R (>= 3.2.0)
+Imports:
+    usethis,
+    rprojroot
+RoxygenNote: 6.0.1.9000
