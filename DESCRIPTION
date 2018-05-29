@@ -7,7 +7,8 @@ Authors@R: c(
     person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
            comment = c(ORCID = "0000-0001-5670-2640")),
     person("Jonathan", "Sidi", email = "yonicd@gmail.com", role = c("aut"),
-           comment = c(ORCID = "0000-0002-4222-1819"))
+           comment = c(ORCID = "0000-0002-4222-1819")),
+    person("Malcolm", "Barrett", email = "malcolmbarrett@gmail.com", role = c("ctb"))
   )
 Maintainer: Bob Rudis <bob@rud.is>
 Description: The 'tidyverse' is awesome, but can take a bit compile on systems
