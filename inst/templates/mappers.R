@@ -1,9 +1,12 @@
 # NOTE these aren't 100% equivalent to the purrr mappers but cover very common use-cases
+#
+# NOTE formula function (e.g. ~{}) are 100% supported
+
 map <- function(.x, .f, ...) {
 
   if (inherits(.f, "formula")) {
     .body <- dimnames(attr(terms(.f), "factors"))[[1]]
-    .f <- function(.x, .=.x) {}
+    .f <- function(.x, . = .x) {}
     body(.f) <- as.expression(parse(text=.body))
   }
 
@@ -19,7 +22,7 @@ map2 <- function(.x, .y, .f, ...) {
 
   if (inherits(.f, "formula")) {
     .body <- dimnames(attr(terms(.f), "factors"))[[1]]
-    .f <- function(.x, .y, .=.x) {}
+    .f <- function(.x, .y, . = .x) {}
     body(.f) <- as.expression(parse(text=.body))
   }
 
@@ -73,7 +76,7 @@ map_df <- function(.x, .f, ..., .id=NULL) {
 map2_df <- function(.x, .y, .f, ..., .id=NULL) {
 
   res <- map(.x, .y, .f, ...)
-  out <- bind_rows(res, .id=.id)
+  out <- bind_rows(res, .id = .id)
   out
 
 }
