@@ -11,7 +11,9 @@ the facilities of the ‘usethis’ package to snap-in base versions of
 useful ‘tidyverse’ functions that are mostly equivalent (some are more
 complete than others). The base R counterpart functions will likely be
 slower than the ‘tidyverse’ equivalents but using them will decrease
-‘Imports’ dependencies. Use delibrately and with caution.
+‘Imports’ dependencies.
+
+Use deliberately and with caution.
 
 ## What’s Inside The Tin
 
@@ -19,7 +21,8 @@ The following functions are implemented:
 
   - `use_infix_helpers`: Use infix-helpers
   - `use_keepers`: Use base-ified equivalents of keep/discard/compact
-  - `use_mappers`: Use base-ified equivalents of ‘map’-pers
+  - `use_mappers`: Use base-ified equivalents of ‘map’-pers (these
+    support `~{}` formula functions)
   - `use_safely`: Use base-ified equivalents of “safely”-ifiers
 
 ## Installation
