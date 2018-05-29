@@ -19,11 +19,17 @@ Use deliberately and with caution.
 
 The following functions are implemented:
 
+  - `use_detect`: Use base-ified equivalents of “detect”-ors (these
+    support `~{}` formula functions)
   - `use_infix_helpers`: Use infix-helpers
+  - `use_isers`: Use “is\_” functions
   - `use_keepers`: Use base-ified equivalents of keep/discard/compact
+    (these support `~{}` formula functions)
   - `use_mappers`: Use base-ified equivalents of ‘map’-pers (these
     support `~{}` formula functions)
   - `use_safely`: Use base-ified equivalents of “safely”-ifiers
+  - `use_walkers`: Use base-ified equivalents of keep/discard/compact
+    (these support `~{}` formula functions)
 
 ## Installation
 

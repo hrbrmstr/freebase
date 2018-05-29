@@ -17,3 +17,6 @@ use_keepers(save_as = "R/utils-keepers.R", open = TRUE)
 \code{keep}/\code{discard}/\code{compact}
 }
 }
+\details{
+These support formula functions (i.e. \code{~{}}).
+}

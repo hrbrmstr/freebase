@@ -16,3 +16,6 @@ use_mappers(save_as = "R/utils-mappers.R", open = TRUE)
 \item Creates \code{R/utils-mappers.R} with base R pseudo-equivalents for \code{purrr} \code{map}-pers.
 }
 }
+\details{
+These support formula functions (i.e. \code{~{}}).
+}
