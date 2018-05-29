@@ -2,6 +2,8 @@
 #'
 #' * Creates `R/utils-mappers.R` with base R pseudo-equivalents for `purrr` `map`-pers.
 #'
+#' These support formula functions (i.e. `~{}`).
+#'
 #' @md
 #' @param save_as Where to save/what to name the file. Defaults to "`R/utils-mappers.R`"
 #' @param open if `TRUE`, open the resultant file

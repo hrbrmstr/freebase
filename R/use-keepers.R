@@ -3,6 +3,8 @@
 #' * Creates `R/utils-keepers.R` with base R pseudo-equivalents for `purrr`
 #' `keep`/`discard`/`compact`
 #'
+#' These support formula functions (i.e. `~{}`).
+#'
 #' @md
 #' @param save_as Where to save/what to name the file. Defaults to "`R/utils-keepers.R`"
 #' @param open if `TRUE`, open the resultant file
