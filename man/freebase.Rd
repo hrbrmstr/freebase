@@ -12,7 +12,7 @@ the facilities of the 'usethis' package to snap-in base versions of useful
 'tidyverse' functions that are mostly equivalent (some are more complete
 than others). The base R counterpart functions will likely be slower than
 the 'tidyverse' equivalents but using them will decrease 'Imports'
-dependencies.\cr\crUse deliberately and with caution.
+dependencies.\cr\cr Use deliberately and with caution.
 }
 \author{
 Bob Rudis (bob@rud.is)
