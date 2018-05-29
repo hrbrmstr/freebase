@@ -28,6 +28,7 @@ The following functions are implemented:
   - `use_mappers`: Use base-ified equivalents of ‘map’-pers (these
     support `~{}` formula functions)
   - `use_safely`: Use base-ified equivalents of “safely”-ifiers
+  - `use_tidylite()`: Use base R versions of ‘tidyr’ ‘gather’/‘spread’
   - `use_walkers`: Use base-ified equivalents of keep/discard/compact
     (these support `~{}` formula functions)
 
