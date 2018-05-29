@@ -1,6 +1,6 @@
-#' Use base R versions of `tidyr` `gather`/`spread`
+#' Use base R versions of `tidyr` `gather`/`spread`/`unite`
 #'
-#' * Creates `R/utils-tidylite.R` containing `gatherlite()` and `spreadlite()`
+#' * Creates `R/utils-tidylite.R` containing `gatherlite()`, `spreadlite()` and `unitelite()`
 #'
 #' @md
 #' @param save_as Where to save/what to name the file. Defaults to "`R/utils-tidylite.R`"
