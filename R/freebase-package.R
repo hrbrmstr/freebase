@@ -1,4 +1,4 @@
-#' A 'usethis'-like Package for Base Pseudo-equivalents of 'tidyverse' Code
+#' A 'usethis'-esque Package for Base R Versions of 'tidyverse' Code
 #'
 #' The 'tidyverse' is awesome, but can take a bit to compile on systems
 #' where there are no pre-built binary packages. Methods are provided which use

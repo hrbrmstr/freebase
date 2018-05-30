@@ -2,18 +2,18 @@
 % Please edit documentation in R/use-detect.R
 \name{use_detect}
 \alias{use_detect}
-\title{Use base-ified equivalents of "detect"-ors}
+\title{Use base R versions of \code{purrr} \code{detect} functions}
 \usage{
 use_detect(save_as = "R/utils-detect.R", open = TRUE)
 }
 \arguments{
-\item{save_as}{Where to save/what to name the file. Defaults to "\code{R/utils-detect.R}"}
+\item{save_as}{File path and name. Defaults to "\code{R/utils-detect.R}"}
 
 \item{open}{if \code{TRUE}, open the resultant file}
 }
 \description{
 \itemize{
-\item Creates \code{R/utils-detect.R} with base R pseudo-equivalents for \code{purrr} \code{detect} (et al).
+\item Creates base R versions of \code{purrr} \code{detect} (et al).
 }
 }
 \details{

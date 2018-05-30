@@ -14,4 +14,3 @@ discard <- function(.x, .p, ...) {
 compact <- function(.x, .p=identity) {
   discard(.x, function(x) is_empty(.p(x)))
 }
-

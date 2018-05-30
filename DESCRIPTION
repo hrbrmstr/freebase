@@ -1,6 +1,6 @@
 Package: freebase
 Type: Package
-Title: A 'usethis'-like Package for Base Pseudo-equivalents of 'tidyverse' Code
+Title: A 'usethis'-esque Package for Base R Versions of 'tidyverse' Code
 Version: 0.1.0
 Date: 2018-05-28
 Authors@R: c(
@@ -8,7 +8,9 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-5670-2640")),
     person("Jonathan", "Sidi", email = "yonicd@gmail.com", role = c("aut"),
            comment = c(ORCID = "0000-0002-4222-1819")),
-    person("Malcolm", "Barrett", email = "malcolmbarrett@gmail.com", role = c("ctb"))
+    person("Malcolm", "Barrett", email = "malcolmbarrett@gmail.com", role = c("ctb")),
+    person("Patrick", "Kennedy", email = "pkqstr@protonmail.com", role = c("ctb"),
+           comment = c(ORCID = "0000-0002-5525-3983"))
   )
 Maintainer: Bob Rudis <bob@rud.is>
 Description: The 'tidyverse' is awesome, but can take a bit to compile on systems

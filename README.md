@@ -1,7 +1,7 @@
 
 # freebase
 
-A ‘usethis’-like Package for Base Pseudo-equivalents of ‘tidyverse’ Code
+A ‘usethis’-esque Package for Base R Versions of ‘tidyverse’ Code
 
 ## Description
 
@@ -19,18 +19,17 @@ Use deliberately and with caution.
 
 The following functions are implemented:
 
-  - `use_detect`: Use base-ified equivalents of “detect”-ors (these
-    support `~{}` formula functions)
-  - `use_infix_helpers`: Use infix-helpers
-  - `use_isers`: Use “is\_” functions
-  - `use_keepers`: Use base-ified equivalents of keep/discard/compact
+  - `use_detect`: Use base R versions of `purrr` `detect` functions
     (these support `~{}` formula functions)
-  - `use_mappers`: Use base-ified equivalents of ‘map’-pers (these
+  - `use_infix_helpers`: Use infix-helpers
+  - `use_isers`: Use “is\_” tester functions
+  - `use_keepers`: Use base R versions of `purrr` `keep` functions
+    (these support `~{}` formula functions)
+  - `use_mappers`: Use base R versions of `purrr` `map` functions (these
     support `~{}` formula functions)
-  - `use_safely`: Use base-ified equivalents of “safely”-ifiers
-  - `use_tidylite()`: Use base R versions of ‘tidyr’
-    ‘gather’/‘spread’/‘unite’
-  - `use_walkers`: Use base-ified equivalents of keep/discard/compact
+  - `use_safely`: Use base R versions of `purrr` `safely` functions
+  - `use_tidylite()`: Use base R versions of `tidyr` functions
+  - `use_walkers`: Use base R versions of `purrr` `walk` functions
     (these support `~{}` formula functions)
 
 ## Installation
