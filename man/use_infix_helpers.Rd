@@ -7,12 +7,12 @@
 use_infix_helpers(save_as = "R/utils-infix-helpers.R", open = TRUE)
 }
 \arguments{
-\item{save_as}{Where to save/what to name the file. Defaults to "\code{R/utils-infix-helpers.R}"}
+\item{save_as}{File path and name. Defaults to "\code{R/utils-infix-helpers.R}"}
 
 \item{open}{if \code{TRUE}, open the resultant file}
 }
 \description{
 \itemize{
-\item Creates \code{R/utils-infix-helpers.R} with base R \code{\%XXX\%} helpers
+\item Creates base R \code{\%xyz\%} helpers
 }
 }

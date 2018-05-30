@@ -2,19 +2,18 @@
 % Please edit documentation in R/use-keepers.R
 \name{use_keepers}
 \alias{use_keepers}
-\title{Use base-ified equivalents of keep/discard/compact}
+\title{Use base R versions of \code{purrr} \code{keep} functions}
 \usage{
 use_keepers(save_as = "R/utils-keepers.R", open = TRUE)
 }
 \arguments{
-\item{save_as}{Where to save/what to name the file. Defaults to "\code{R/utils-keepers.R}"}
+\item{save_as}{File path and name. Defaults to "\code{R/utils-keepers.R}"}
 
 \item{open}{if \code{TRUE}, open the resultant file}
 }
 \description{
 \itemize{
-\item Creates \code{R/utils-keepers.R} with base R pseudo-equivalents for \code{purrr}
-\code{keep}/\code{discard}/\code{compact}
+\item Creates base R versions of \code{purrr} \code{keep} fuctions.
 }
 }
 \details{

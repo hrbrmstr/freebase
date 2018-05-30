@@ -1,4 +1,4 @@
-# NOTE these aren't 100% equivalent to the purrr mappers but cover very common use-cases
+# NOTE these aren't 100% equivalent to the purrr walkers but cover very common use-cases
 #
 # NOTE formula function (e.g. ~{}) are 100% supported
 

@@ -2,17 +2,17 @@
 % Please edit documentation in R/use-safely.R
 \name{use_safely}
 \alias{use_safely}
-\title{Use base-ified equivalents of "safely"-ifiers}
+\title{Use base R versions of \code{purrr} \code{safely} functions}
 \usage{
 use_safely(save_as = "R/utils-safely.R", open = TRUE)
 }
 \arguments{
-\item{save_as}{Where to save/what to name the file. Defaults to "\code{R/utils-safely.R}"}
+\item{save_as}{File path and name. Defaults to "\code{R/utils-safely.R}"}
 
 \item{open}{if \code{TRUE}, open the resultant file}
 }
 \description{
 \itemize{
-\item Creates \code{R/utils-safely.R} with base R pseudo-equivalents for \code{purrr} \code{safely} (et al).
+\item Creates base R versions of \code{purrr} \code{safely} (et al).
 }
 }

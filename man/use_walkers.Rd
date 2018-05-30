@@ -2,19 +2,18 @@
 % Please edit documentation in R/use-walkers.R
 \name{use_walkers}
 \alias{use_walkers}
-\title{Use base-ified equivalents of keep/discard/compact}
+\title{Use base R versions of \code{purrr} \code{walk} functions}
 \usage{
 use_walkers(save_as = "R/utils-walkers.R", open = TRUE)
 }
 \arguments{
-\item{save_as}{Where to save/what to name the file. Defaults to "\code{R/utils-walkers.R}"}
+\item{save_as}{File path and name. Defaults to "\code{R/utils-walkers.R}"}
 
 \item{open}{if \code{TRUE}, open the resultant file}
 }
 \description{
 \itemize{
-\item Creates \code{R/utils-walkers.R} with base R pseudo-equivalents for \code{purrr}
-\code{walk}/\code{walk2}
+\item Creates base R versions of \code{purrr} \code{walk} functions
 }
 }
 \details{

@@ -2,18 +2,18 @@
 % Please edit documentation in R/use-mappers.R
 \name{use_mappers}
 \alias{use_mappers}
-\title{Use base-ified equivalents of 'map'-pers}
+\title{Use base R versions of \code{purrr} \code{map} functions}
 \usage{
 use_mappers(save_as = "R/utils-mappers.R", open = TRUE)
 }
 \arguments{
-\item{save_as}{Where to save/what to name the file. Defaults to "\code{R/utils-mappers.R}"}
+\item{save_as}{File path and name. Defaults to "\code{R/utils-mappers.R}"}
 
 \item{open}{if \code{TRUE}, open the resultant file}
 }
 \description{
 \itemize{
-\item Creates \code{R/utils-mappers.R} with base R pseudo-equivalents for \code{purrr} \code{map}-pers.
+\item Creates base R versions of \code{purrr} \code{map} functions.
 }
 }
 \details{
