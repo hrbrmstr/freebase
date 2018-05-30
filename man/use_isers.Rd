@@ -7,7 +7,7 @@
 use_isers(save_as = "R/utils-isers.R", open = TRUE)
 }
 \arguments{
-\item{save_as}{Where to save/what to name the file. Defaults to "\code{R/utils-detect.R}"}
+\item{save_as}{Where to save/what to name the file. Defaults to "\code{R/utils-isers.R}"}
 
 \item{open}{if \code{TRUE}, open the resultant file}
 }

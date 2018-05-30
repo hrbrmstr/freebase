@@ -1,4 +1,4 @@
-#' Use base-ified equivalents of keep/discard/compact
+#' Use base-ified equivalents of `walk`/`walk2`
 #'
 #' * Creates `R/utils-walkers.R` with base R pseudo-equivalents for `purrr`
 #' `walk`/`walk2`

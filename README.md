@@ -5,9 +5,9 @@ A ‘usethis’-like Package for Base Pseudo-equivalents of ‘tidyverse’ Code
 
 ## Description
 
-The ‘tidyverse’ is awesome, but can take a bit compile on systems where
-there are no pre-built binary packages. Methods are provided which use
-the facilities of the ‘usethis’ package to snap-in base versions of
+The ‘tidyverse’ is awesome, but can take a bit to compile on systems
+where there are no pre-built binary packages. Methods are provided which
+use the facilities of the ‘usethis’ package to snap-in base versions of
 useful ‘tidyverse’ functions that are mostly equivalent (some are more
 complete than others). The base R counterpart functions will likely be
 slower than the ‘tidyverse’ equivalents but using them will decrease
@@ -44,7 +44,7 @@ devtools::install_github("hrbrmstr/freebase")
 ``` r
 library(freebase)
 
-# current verison
+# current version
 packageVersion("freebase")
 ```
 

@@ -3,7 +3,7 @@
 #' * Creates `R/utils-isers.R` filled with `is_...` testors
 #'
 #' @md
-#' @param save_as Where to save/what to name the file. Defaults to "`R/utils-detect.R`"
+#' @param save_as Where to save/what to name the file. Defaults to "`R/utils-isers.R`"
 #' @param open if `TRUE`, open the resultant file
 #' @export
 use_isers <- function(save_as = "R/utils-isers.R", open = TRUE) {

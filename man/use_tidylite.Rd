@@ -2,7 +2,7 @@
 % Please edit documentation in R/use-tidylite.R
 \name{use_tidylite}
 \alias{use_tidylite}
-\title{Use base R versions of \code{tidyr} \code{gather}/\code{spread}}
+\title{Use base R versions of \code{tidyr} \code{gather}/\code{spread}/\code{unite}}
 \usage{
 use_tidylite(save_as = "R/utils-tidylite.R", open = TRUE)
 }
@@ -13,6 +13,6 @@ use_tidylite(save_as = "R/utils-tidylite.R", open = TRUE)
 }
 \description{
 \itemize{
-\item Creates \code{R/utils-tidylite.R} containing \code{gatherlite()} and \code{spreadlite()}
+\item Creates \code{R/utils-tidylite.R} containing \code{gatherlite()}, \code{spreadlite()} and \code{unitelite()}
 }
 }

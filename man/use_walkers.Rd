@@ -2,7 +2,7 @@
 % Please edit documentation in R/use-walkers.R
 \name{use_walkers}
 \alias{use_walkers}
-\title{Use base-ified equivalents of keep/discard/compact}
+\title{Use base-ified equivalents of \code{walk}/\code{walk2}}
 \usage{
 use_walkers(save_as = "R/utils-walkers.R", open = TRUE)
 }

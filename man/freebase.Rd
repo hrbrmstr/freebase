@@ -6,7 +6,7 @@
 \alias{freebase-package}
 \title{A 'usethis'-like Package for Base Pseudo-equivalents of 'tidyverse' Code}
 \description{
-The 'tidyverse' is awesome, but can take a bit compile on systems
+The 'tidyverse' is awesome, but can take a bit to compile on systems
 where there are no pre-built binary packages. Methods are provided which use
 the facilities of the 'usethis' package to snap-in base versions of useful
 'tidyverse' functions that are mostly equivalent (some are more complete
