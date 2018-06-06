@@ -26,7 +26,7 @@ The following functions are implemented:
 - `use_infix_helpers`: Use infix-helpers
 - `use_isers`: Use "is_" tester functions
 - `use_keepers`: Use base R versions of `purrr` `keep` functions (these support `~{}` formula functions)
-- `use_mappers`: Use base R versions of `purrr` `map` functions (these support `~{}` formula functions)
+- `use_mappers`: Use base R versions of `purrr` `map` functions (these support `~{}` formula functions) along with `set_names()`
 - `use_safely`:	Use base R versions of `purrr` `safely` functions
 - `use_tidylite()`: Use base R versions of core `tidyr` functions
 - `use_walkers`: Use base R versions of `purrr` `walk` functions (these support `~{}` formula functions)
@@ -34,7 +34,7 @@ The following functions are implemented:
 ## Installation
 
 ```{r eval=FALSE}
-devtools::install_github("hrbrmstr/freebase")
+devtools::install_git("git://gitlab.com/hrbrmstr/freebase")
 ```
 
 ```{r message=FALSE, warning=FALSE, error=FALSE, include=FALSE}

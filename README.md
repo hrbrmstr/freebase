@@ -26,16 +26,16 @@ The following functions are implemented:
   - `use_keepers`: Use base R versions of `purrr` `keep` functions
     (these support `~{}` formula functions)
   - `use_mappers`: Use base R versions of `purrr` `map` functions (these
-    support `~{}` formula functions)
+    support `~{}` formula functions) along with `set_names()`
   - `use_safely`: Use base R versions of `purrr` `safely` functions
-  - `use_tidylite()`: Use base R versions of `tidyr` functions
+  - `use_tidylite()`: Use base R versions of core `tidyr` functions
   - `use_walkers`: Use base R versions of `purrr` `walk` functions
     (these support `~{}` formula functions)
 
 ## Installation
 
 ``` r
-devtools::install_github("hrbrmstr/freebase")
+devtools::install_git("git://gitlab.com/hrbrmstr/freebase")
 ```
 
 ## Usage
@@ -47,4 +47,4 @@ library(freebase)
 packageVersion("freebase")
 ```
 
-    ## [1] '0.1.0'
+    ## [1] '0.2.0'
