@@ -124,10 +124,27 @@ map_df <- function(.x, .f, ..., .id=NULL) {
 
 map_dfr <- map_df
 
+map_dfc <- function(.x, .f, ...) {
+
+  res <- map(.x, .f, ...)
+  out <- bind_cols(res)
+  out
+
+}
+
 map2_df <- function(.x, .y, .f, ..., .id=NULL) {
 
-  res <- map(.x, .y, .f, ...)
+  res <- map2(.x, .y, .f, ...)
   out <- bind_rows(res, .id = .id)
+  out
+
+}
+
+
+map2_dfc <- function(.x, .y, .f, ...) {
+
+  res <- map2(.x, .y, .f, ...)
+  out <- bind_cols(res)
   out
 
 }
@@ -174,6 +191,39 @@ bind_rows <- function(..., .id = NULL) {
     })
   ) -> out
 
+  rownames(out) <- NULL
+
+  class(out) <- c("tbl_df", "tbl", "data.frame")
+
+  out
+
+}
+
+bind_cols <- function(...) {
+
+  res <- list(...)
+
+  row_mismatch <- lapply(res, nrow) != nrow(res[[1]])
+
+  if (any(row_mismatch)) {
+    first_mismatch_pos <- which(row_mismatch)[1]
+    stop(paste0("Argument ", first_mismatch_pos,
+                " must be length ", nrow(res[[1]]),
+                ", not ", nrow(res[[first_mismatch_pos]])))
+    }
+
+  if (length(res) == 1) res <- res[[1]]
+
+  col_names <- unlist(lapply(res, names), use.names = FALSE)
+  col_names <- make.unique(col_names, sep = "")
+
+  saf <- default.stringsAsFactors()
+  options(stringsAsFactors = FALSE)
+  on.exit(options(stringsAsFactors = saf))
+
+  out <- do.call(cbind.data.frame, res)
+
+  names(out) <- col_names
   rownames(out) <- NULL
 
   class(out) <- c("tbl_df", "tbl", "data.frame")
