@@ -15,6 +15,21 @@ slower than the ‘tidyverse’ equivalents but using them will decrease
 
 Use deliberately and with caution.
 
+## NOTE
+
+This package shares core concepts with
+[`noplyr`](https://github.com/yonicd/noplyr) (and the author of `noplyr`
+is a contributor to `freebase`). For valid, needed reason, `noplyr` uses
+`rlang` and that introduces a compilation dependency/requirement which
+`freebase` is trying to avoid. The goal of `freebase` is 100% base R
+implementation of core/most frequently used `tidyverse` components
+primarily for use by package authors who prefer `tidyverse` idioms and
+would like to use them in package development but do not want to
+introduce compilation and/or third-party dependencies.
+
+As noted *just above*, `freebase` should be uses deliberately and with
+caution.
+
 ## What’s Inside The Tin
 
 The following functions are implemented:
