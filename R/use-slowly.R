@@ -6,7 +6,7 @@
 #' @param save_as File path and name. Defaults to "`R/utils-slowly.R`"
 #' @param open if `TRUE`, open the resultant file
 #' @export
-use_slowly <- function(save_as = "R/utils-safely.R", open = TRUE) {
+use_slowly <- function(save_as = "R/utils-slowly.R", open = TRUE) {
 
   check_is_package("use_slowly()")
 
