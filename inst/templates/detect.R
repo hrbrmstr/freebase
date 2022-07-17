@@ -5,7 +5,7 @@ is_true <- function (x) identical(x, TRUE)
 detect <- function (.x, .f, ..., .right = FALSE, .p) {
 
   if (inherits(.f, "formula")) {
-    .body <- dimnames(attr(terms(.f), "factors"))[[1]]
+    .body <- dimnames(attr(stats::terms(.f), "factors"))[[1]]
     .f <- function(.x, .=.x) {}
     body(.f) <- as.expression(parse(text=.body))
   }
@@ -25,7 +25,7 @@ detect <- function (.x, .f, ..., .right = FALSE, .p) {
 detect_index <- function (.x, .f, ..., .right = FALSE, .p) {
 
   if (inherits(.f, "formula")) {
-    .body <- dimnames(attr(terms(.f), "factors"))[[1]]
+    .body <- dimnames(attr(stats::terms(.f), "factors"))[[1]]
     .f <- function(.x, .=.x) {}
     body(.f) <- as.expression(parse(text=.body))
   }

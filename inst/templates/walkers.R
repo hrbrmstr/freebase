@@ -6,7 +6,7 @@
 walk <- function(.x, .f, ...) {
 
   if (inherits(.f, "formula")) {
-    .body <- dimnames(attr(terms(.f), "factors"))[[1]]
+    .body <- dimnames(attr(stats::terms(.f), "factors"))[[1]]
     .f <- function(.x, . = .x) {}
     body(.f) <- as.expression(parse(text=.body))
   }
@@ -25,7 +25,7 @@ walk <- function(.x, .f, ...) {
 walk2 <- function(.x, .y, .f, ...) {
 
   if (inherits(.f, "formula")) {
-    .body <- dimnames(attr(terms(.f), "factors"))[[1]]
+    .body <- dimnames(attr(stats::terms(.f), "factors"))[[1]]
     .f <- function(.x, .y, . = .x) {}
     body(.f) <- as.expression(parse(text=.body))
   }
