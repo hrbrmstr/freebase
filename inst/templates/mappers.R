@@ -16,7 +16,7 @@ map <- function(.x, .f, ..., .default) {
   default_exists <- !missing(.default)
 
   if (inherits(.f, "formula")) {
-    .body <- dimnames(attr(terms(.f), "factors"))[[1]]
+    .body <- dimnames(attr(stats::terms(.f), "factors"))[[1]]
     .f <- function(.x, . = .x) {}
     body(.f) <- as.expression(parse(text=.body))
   }
@@ -53,7 +53,7 @@ map2 <- function(.x, .y, .f, ..., .default) {
   default_exists <- !missing(.default)
 
   if (inherits(.f, "formula")) {
-    .body <- dimnames(attr(terms(.f), "factors"))[[1]]
+    .body <- dimnames(attr(stats::terms(.f), "factors"))[[1]]
     .f <- function(.x, .y, . = .x) {}
     body(.f) <- as.expression(parse(text=.body))
   }
@@ -73,33 +73,33 @@ map2 <- function(.x, .y, .f, ..., .default) {
 
 }
 
-map_chr <- function(.x, .f, ...) {
+map_chr <- function(.x, .f, ..., .default) {
   nm <- names(.x)
   out <- as.character((map(.x, .f, ..., .default = .default)))
   if (length(nm) > 0) set_names(out, nm) else out
 }
 
-map2_chr <- function(.x, .y, .f, ...) {
+map2_chr <- function(.x, .y, .f, ..., .default) {
   as.character(unlist(map2(.x, .y, .f, ..., .default = .default)))
 }
 
-map_lgl <- function(.x, .f, ...) {
+map_lgl <- function(.x, .f, ..., .default) {
   nm <- names(.x)
   out <- as.logical(unlist(map(.x, .f, ..., .default = .default)))
   if (length(nm) > 0) set_names(out, nm) else out
 }
 
-map2_lgl <- function(.x, .y, .f, ...) {
+map2_lgl <- function(.x, .y, .f, ..., .default) {
   as.logical(unlist(map2(.x, .y, .f, ..., .default = .default)))
 }
 
-map_dbl <- function(.x, .f, ...) {
+map_dbl <- function(.x, .f, ..., .default) {
   nm <- names(.x)
   out <- as.double(unlist(map(.x, .f, ..., .default = .default)))
   if (length(nm) > 0) set_names(out, nm) else out
 }
 
-map2_dbl <- function(.x, .y, .f, ...) {
+map2_dbl <- function(.x, .y, .f, ..., .default) {
   as.double(unlist(map2(.x, .y, .f, ..., .default = .default)))
 }
 
@@ -109,7 +109,7 @@ map_int <- function(.x, .f, ..., .default) {
   if (length(nm) > 0) set_names(out, nm) else out
 }
 
-map2_int <- function(.x, .y, .f, ...) {
+map2_int <- function(.x, .y, .f, ..., .default) {
   as.integer(unlist(map2(.x, .y, .f, ..., .default = .default)))
 }
 

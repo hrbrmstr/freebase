@@ -7,5 +7,5 @@
 ^NOTES\.*html$
 ^\.codecov\.yml$
 ^README_files$
-^doc$
+^docs$
 ^tmp$
